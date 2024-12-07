@@ -1,0 +1,116 @@
+{
+  "hero": {
+    "greeting": "Hello, I'm Alex Becci",
+    "description": "Full-Stack Developer with a solid background in building scalable and efficient web applications. With a focus on best development practices, I have participated in projects of various sizes, from startups to established companies."
+  },
+  "button": "Download CV",
+  "SkillSection": {
+    "title": "",
+    "type": "Services",
+    "cards": [
+      {
+        "icon": "🔄",
+        "title": "Git Version Control",
+        "description": "Extensive experience in managing code repositories, implementing branching strategies, and ensuring smooth collaboration through Git. Proficient in tools like GitHub and GitLab for version control and CI/CD pipelines."
+      },
+      {
+        "icon": "📱",
+        "title": "App Design",
+        "description": "Skilled in creating intuitive and user-friendly interfaces for mobile and web applications. Combining design principles with modern frameworks to enhance user experience."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Back-end Development",
+        "description": "Proficient in developing robust and scalable backend systems using technologies like NestJS, Express, and Python. Expertise in creating RESTful APIs and integrating with databases such as MongoDB and PostgreSQL."
+      },
+      {
+        "icon": "🌐",
+        "title": "Web Development",
+        "description": "Building responsive and dynamic websites with React, Next.js, and TypeScript. Experience in delivering high-performance applications tailored to client needs."
+      },
+      {
+        "icon": "💼",
+        "title": "Freelancing",
+        "description": "Delivering tailored software solutions to clients, leveraging expertise in full-stack development. Skilled in project management and effective communication to meet client expectations."
+      }
+    ]
+  },
+  "configuration": {
+    "navTitle": "Lenguage",
+    "optionEnglish": "English",
+    "optionSpanish": "Spanish"
+  },
+  "ConnectWithMe": {
+    "title": "Connect with me",
+    "button": "Send"
+  },
+  "projects": {
+    "title": "Proyects",
+    "list": [
+      {
+        "title": "Meal Management System",
+        "description": "System for companies allowing users to request specific dishes and manage daily menus. Includes authentication and a well-structured database.",
+        "imageUrl": "/images/homeDesktop.jpg",
+        "githubUrl": "https://github.com/AlexBecci",
+        "demoUrl": "https://autofoodbecci.up.railway.app/"
+      },
+      {
+        "title": "Personal Expense Manager",
+        "description": "Mobile and web app to track your monthly expenses in detail. Categorize your purchases, set budg  ets, generate custom reports, and visualize your financial history intuitively.",
+        "imageUrl": "/images/MonthlyExpenses.jpg",
+        "appStoreUrl": "https://apps.apple.com/app/id123456789",
+        "playStoreUrl": "https://play.google.com/store/apps/details?id=com.example.expenses",
+        "githubUrl": "https://github.com/your_username/expense-manager",
+        "demoUrl": "https://your-expense-demo.netlify.app/"
+      },
+      {
+        "title": "Movie Catalog Application",
+        "description": "An app that consumes a movie API to explore detailed information, watch trailers, and discover the latest releases in theaters. Perfect for movie enthusiasts staying updated.",
+        "imageUrl": "/images/cineApiolis.jpg",
+        "githubUrl": "https://github.com/AlexBecci/CineAPIolis/tree/master",
+        "demoUrl": "https://peli-api-olis.vercel.app/"
+      },
+      {
+        "title": "InfoMortys",
+        "description": "Web application that consumes the Rick and Morty API to display detailed information about characters, locations, episodes, and other data from the series. Explore the Rick and Morty universe in an interactive way.",
+        "imageUrl": "/images/InfoMortys.jpg",
+        "githubUrl": "https://github.com/AlexBecci/Info-Mortys-web/tree/master",
+        "demoUrl": "https://test-vercel-seven-theta.vercel.app/"
+      },
+      {
+        "title": "Landing Brother Madrid",
+        "description": "Basic landing page developed as a challenge requested by the company. Demonstrates skills in responsive design and frontend development.",
+        "imageUrl": "/images/BrotherMadrid.jpg",
+        "githubUrl": "https://github.com/AlexBecci",
+        "demoUrl": "https://lnkd.in/dS2JuqDz"
+      },
+      {
+        "title": "Poke React",
+        "description": "Application that queries the Pokémon API to obtain different Pokémon, allowing filtering by attributes, names, and more.",
+        "imageUrl": "/images/pokemon.jpg",
+        "githubUrl": "https://github.com/your_username/poke-react",
+        "demoUrl": "https://poke-react-kohl.vercel.app/"
+      },
+      {
+        "title": "Seshat",
+        "description": "Creative platform for sharing stories, poems, and narratives. Promotes diversity and creativity.",
+        "imageUrl": "/images/seshat.png",
+        "githubUrl": "",
+        "demoUrl": "https://www.seshat.website"
+      },
+      {
+        "title": "Weather Application",
+        "description": "Simple application using the OpenWeatherMap API to display current weather.",
+        "imageUrl": "/images/previsionMeteorologica.jpg",
+        "githubUrl": "https://github.com/AlexBecci",
+        "demoUrl": "https://lnkd.in/dsNSmJWh"
+      }
+    ]
+  },
+  "Skills": {
+    "lenguage": "Lenguajes de Programación",
+    "libraries": "Tecnologías y Librerías",
+    "Tools": "Herramientas de Desarrollo",
+    "Databases": "Bases de Datos"
+  }
+}

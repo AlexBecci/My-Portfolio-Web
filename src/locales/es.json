@@ -1,0 +1,116 @@
+{
+    "hero": {
+        "greeting": "¡Hola! Soy Alex Becci",
+        "description": "Desarrollador Full-Stack con sólida experiencia en la creación de aplicaciones web escalables y eficientes. Con un enfoque en las mejores prácticas de desarrollo, he participado en proyectos de diversas envergaduras, desde startups hasta empresas consolidadas."
+    },
+    "button": "Descargar CV",
+    "SkillSection": {
+        "title": "",
+        "type": "Servicios",
+        "cards": [
+            {
+                "icon": "🔄",
+                "title": "Control de Versiones con Git",
+                "description": "Amplia experiencia gestionando repositorios de código, implementando estrategias de ramificación y asegurando una colaboración fluida con Git. Competencia en herramientas como GitHub y GitLab para control de versiones y pipelines de CI/CD."
+            },
+            {
+                "icon": "📱",
+                "title": "Diseño de Aplicaciones",
+                "description": "Habilidad para crear interfaces intuitivas y amigables para aplicaciones móviles y web. Combinando principios de diseño con frameworks modernos para mejorar la experiencia del usuario."
+            },
+            {
+                "icon": "⚙️",
+                "title": "Desarrollo Back-end",
+                "description": "Competencia en el desarrollo de sistemas backend robustos y escalables utilizando tecnologías como NestJS, Express y Python. Experiencia en la creación de APIs RESTfull e integración con bases de datos como MongoDB y PostgreSQL."
+            },
+            {
+                "icon": "🌐",
+                "title": "Desarrollo Web",
+                "description": "Construcción de sitios web dinámicos y responsivos con React, Next.js y TypeScript. Experiencia en la entrega de aplicaciones de alto rendimiento adaptadas a las necesidades del cliente."
+            },
+            {
+                "icon": "💼",
+                "title": "Trabajo Freelance",
+                "description": "Proporcionando soluciones de software personalizadas a clientes, aprovechando la experiencia en desarrollo full-stack. Habilidad en gestión de proyectos y comunicación efectiva para cumplir con las expectativas del cliente."
+            }
+        ]
+    },
+    "configuration": {
+        "navTitle": "Idioma",
+        "optionEnglish": "Ingles",
+        "optionSpanish": "Español"
+    },
+    "ConnectWithMe": {
+        "title": "Conecta conmigo",
+        "button": "Enviar"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "list": [
+            {
+                "title": "Sistema de Gestión de Comidas",
+                "description": "Sistema para empresas que permite a los usuarios solicitar platos específicos y gestionar menús diarios. Incluye autenticación y base de datos bien estructurada.",
+                "imageUrl": "/images/homeDesktop.jpg",
+                "githubUrl": "https://github.com/AlexBecci",
+                "demoUrl": "https://autofoodbecci.up.railway.app/"
+            },
+            {
+                "title": "Gestor de Gastos Personales",
+                "description": "Aplicación móvil y web para llevar un control detallado de tus gastos mensuales. Categoriza tus compras, establece presupuestos, genera reportes personalizados y visualiza tu historial financiero de forma intuitiva.",
+                "imageUrl": "/images/MonthlyExpenses.jpg",
+                "appStoreUrl": "https://apps.apple.com/app/id123456789",
+                "playStoreUrl": "https://play.google.com/store/apps/details?id=com.example.gastos",
+                "githubUrl": "https://github.com/tu_usuario/gestor-gastos",
+                "demoUrl": "https://tu-demo-gastos.netlify.app/"
+            },
+            {
+                "title": "Aplicación de Catálogos de Películas",
+                "description": "App que consume una API de películas para explorar información detallada, ver tráilers y descubrir lo último en cartelera. Ideal para cinéfilos que buscan estar actualizados.",
+                "imageUrl": "/images/cineApiolis.jpg",
+                "githubUrl": "https://github.com/AlexBecci/CineAPIolis/tree/master",
+                "demoUrl": "https://peli-api-olis.vercel.app/"
+            },
+            {
+                "title": "InfoMortys",
+                "description": "Aplicación web que consume la API de Rick y Morty para mostrar información detallada sobre personajes, ubicaciones, episodios y otros datos de la serie. Explora el universo de Rick y Morty de una manera interactiva.",
+                "imageUrl": "/images/InfoMortys.jpg",
+                "githubUrl": "https://github.com/AlexBecci/Info-Mortys-web/tree/master",
+                "demoUrl": "https://test-vercel-seven-theta.vercel.app/"
+            },
+            {
+                "title": "Landing Brother Madrid",
+                "description": "Landing básica desarrollada como desafío solicitado por la empresa. Demuestra habilidades en diseño responsivo y desarrollo frontend.",
+                "imageUrl": "/images/BrotherMadrid.jpg",
+                "githubUrl": "https://github.com/AlexBecci/Challenge-FrontEnd/tree/master",
+                "demoUrl": "https://challenge-mu-ten.vercel.app/"
+            },
+            {
+                "title": "Poke React",
+                "description": "Aplicación que consulta la API de Pokémon para obtener los diferentes Pokémon, permitiendo filtrar por atributos, nombres y más.",
+                "imageUrl": "/images/pokemon.jpg",
+                "githubUrl": "https://github.com/tu_usuario/poke-react",
+                "demoUrl": "https://poke-react-kohl.vercel.app/"
+            },
+            {
+                "title": "Seshat",
+                "description": "Plataforma creativa para compartir historias, poemas y relatos. Promueve diversidad y creatividad.",
+                "imageUrl": "/images/seshat.png",
+                "githubUrl": "",
+                "demoUrl": "https://www.seshat.website"
+            },
+            {
+                "title": "Aplicación del Clima",
+                "description": "Aplicación sencilla que utiliza la API de OpenWeatherMap para mostrar el clima actual.",
+                "imageUrl": "/images/previsionMeteorologica.jpg",
+                "githubUrl": "https://github.com/AlexBecci",
+                "demoUrl": "https://lnkd.in/dsNSmJWh"
+            }
+        ]
+    },
+    "Skills": {
+        "lenguage": "Programming Languages",
+        "libraries": "Technologies & Libraries",
+        "Tools": "Development Tools",
+        "Databases": "Databases"
+    }
+}
