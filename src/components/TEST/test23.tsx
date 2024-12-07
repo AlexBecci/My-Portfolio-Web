@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Code2, Download, Globe, Mail, Phone } from 'lucide-react'
+import {  Mail, Phone } from 'lucide-react'
 import { motion } from "framer-motion"
 
 interface HeroContent {
@@ -67,6 +67,7 @@ const content: Record<'es' | 'en', HeroContent> = {
 
 export default function Hero() {
   const [language, setLanguage] = useState<'es' | 'en'>('es')
+  console.log(setLanguage)
   const t = content[language]
 
   return (

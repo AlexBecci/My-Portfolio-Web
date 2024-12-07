@@ -1,6 +1,4 @@
-import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "react-responsive";
 
 export function SkillCard() {
     const { t } = useTranslation();
