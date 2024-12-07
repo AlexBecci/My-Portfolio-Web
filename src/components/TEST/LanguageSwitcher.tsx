@@ -4,7 +4,7 @@ import { TbWorldCog } from 'react-icons/tb';
 
 export const LanguageSwitcher: React.FC = () => {
     const { i18n } = useTranslation();
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
     const { t } = useTranslation();
 
     const changeLanguage = (lang: string) => {

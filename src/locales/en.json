@@ -55,15 +55,6 @@
         "demoUrl": "https://autofoodbecci.up.railway.app/"
       },
       {
-        "title": "Personal Expense Manager",
-        "description": "Mobile and web app to track your monthly expenses in detail. Categorize your purchases, set budg  ets, generate custom reports, and visualize your financial history intuitively.",
-        "imageUrl": "/images/MonthlyExpenses.jpg",
-        "appStoreUrl": "https://apps.apple.com/app/id123456789",
-        "playStoreUrl": "https://play.google.com/store/apps/details?id=com.example.expenses",
-        "githubUrl": "https://github.com/your_username/expense-manager",
-        "demoUrl": "https://your-expense-demo.netlify.app/"
-      },
-      {
         "title": "Movie Catalog Application",
         "description": "An app that consumes a movie API to explore detailed information, watch trailers, and discover the latest releases in theaters. Perfect for movie enthusiasts staying updated.",
         "imageUrl": "/images/cineApiolis.jpg",

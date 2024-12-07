@@ -54,15 +54,7 @@
                 "githubUrl": "https://github.com/AlexBecci",
                 "demoUrl": "https://autofoodbecci.up.railway.app/"
             },
-            {
-                "title": "Gestor de Gastos Personales",
-                "description": "Aplicación móvil y web para llevar un control detallado de tus gastos mensuales. Categoriza tus compras, establece presupuestos, genera reportes personalizados y visualiza tu historial financiero de forma intuitiva.",
-                "imageUrl": "/images/MonthlyExpenses.jpg",
-                "appStoreUrl": "https://apps.apple.com/app/id123456789",
-                "playStoreUrl": "https://play.google.com/store/apps/details?id=com.example.gastos",
-                "githubUrl": "https://github.com/tu_usuario/gestor-gastos",
-                "demoUrl": "https://tu-demo-gastos.netlify.app/"
-            },
+
             {
                 "title": "Aplicación de Catálogos de Películas",
                 "description": "App que consume una API de películas para explorar información detallada, ver tráilers y descubrir lo último en cartelera. Ideal para cinéfilos que buscan estar actualizados.",
