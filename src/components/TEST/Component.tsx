@@ -2,11 +2,12 @@
 
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { LanguageSwitcher } from './testLanguage'
+import { LanguageSwitcher } from './LanguageSwitcher'
 import { motion } from "framer-motion"
 import { SkillCard } from './SkillCard'
 import { Projects } from './Project'
 import { Github } from './GitHubCalendary'
+import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
 interface NavItem {
     label: string
@@ -35,49 +36,14 @@ export function Component() {
 
     //nueva forma de importar la data
     const skillCards = t('SkillSection.cards', { returnObjects: true }) as SkillCard[];
-    /*  const skillCard: SkillCard[] = [
-         {
-             icon: '🔄',
-             title: 'Git Version Control',
-             description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-         },
-         {
-             icon: '📱',
-             title: 'App Design',
-             description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-         },
-         {
-             icon: '⚙️',
-             title: 'Back-end Development',
-             description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-         },
-         {
-             icon: '🌐',
-             title: 'Web Development',
-             description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-         },
-         {
-             icon: '📸',
-             title: 'Photography',
-             description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-         },
-         {
-             icon: '💼',
-             title: 'Freelancing',
-             description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-         },
-     ] */
 
-    /*   const handleSubmit = (e: React.FormEvent) => {
-          e.preventDefault()
-          // Handle form submission
-          console.log({ email, message })
-      } */
+    //boleano que habilita el subNavbar
+    const [isOpen, setIsOpen] = useState<boolean>(false)
 
     return (
         <div className='min-h-screen text-white bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 textGothamMedium'>
             {/* Navigation */}
-            <nav className="fixed top-0 z-50 w-full bg-slate-950 bg-opacity-80  backdrop-blur">{/* bg-[#1e2237]/80 */}
+            <nav className={`fixed top-0 z-50 w-full bg-slate-950 ${isOpen ? 'bg-opacity-100' : 'bg-opacity-80'}  backdrop-blur`}>{/* bg-[#1e2237]/80 */}
                 <div className="mx-auto flex max-w-7xl items-center justify-between p-4">
                     <div className="text-2xl font-bold">
                         be<span className="text-rose-500">cc</span>i
@@ -92,9 +58,46 @@ export function Component() {
                                 </li>
                             ))}
                         </div>
-                        <LanguageSwitcher />
+                        <div >
+
+                        </div>
+                        <div className='flex items-center'>
+                            <LanguageSwitcher />
+                            <button className='mx-2 md:hidden' onClick={() => setIsOpen(!isOpen)}>
+                                {isOpen ? (
+                                    <FaChevronUp className='cursor-pointer hover:text-rose-500 duration-150' size={20} />
+                                ) : (
+                                    <FaChevronDown className='cursor-pointer hover:text-rose-500 duration-150' size={20} />
+                                )}
+                            </button>
+                        </div>
+
                     </ul>
                 </div>
+                {/* Mobile menu */}
+                {isOpen && (
+                    <div
+                        className={`absolute left-0 right-0 z-20 transform transition-all duration-300 ease-in-out md:hidden ${isOpen
+                            ? "translate-y-0 opacity-100"
+                            : "-translate-y-full opacity-0"
+                            }`}
+                    >
+                        <div className="bg-slate-950/100 shadow-lg">
+                            <div className="space-y-1 px-4 py-3">
+                                {navItems.map((item) => (
+                                    <a
+                                        key={item.label}
+                                        href={item.href}
+                                        onClick={() => setIsOpen(false)}
+                                        className="block rounded-lg px-3 py-2 text-base font-medium text-white hover:bg-slate-800/20 hover:text-white transition-colors"
+                                    >
+                                        {item.label}
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                )}
             </nav>
 
             <motion.div
@@ -161,6 +164,7 @@ export function Component() {
                                 onChange={(e) => setEmail(e.target.value)}
                                 placeholder="Email"
                                 name='email'
+                                autoComplete='off'
                                 id='email'
                                 className="w-full rounded-lg bg-[#252945] px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                                 required
@@ -171,6 +175,7 @@ export function Component() {
                                 placeholder="Message"
                                 id="message"
                                 name='message'
+                                autoComplete='off'
                                 rows={4}
                                 className="w-full rounded-lg bg-[#252945] px-6 py-4 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                                 required

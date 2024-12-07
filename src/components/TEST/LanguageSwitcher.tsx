@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaFlagUsa } from 'react-icons/fa';
-import { GiSpain } from 'react-icons/gi';
 import { TbWorldCog } from 'react-icons/tb';
 
 export const LanguageSwitcher: React.FC = () => {
@@ -31,14 +29,12 @@ export const LanguageSwitcher: React.FC = () => {
                         onClick={() => changeLanguage('en')}
                         className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-700 w-full text-left"
                     >
-                        {/* <FaFlagUsa size={20} /> */}
                         <span>{t('configuration.optionEnglish')}</span>
                     </button>
                     <button
                         onClick={() => changeLanguage('es')}
                         className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-700 w-full text-left"
                     >
-                       {/*  <GiSpain size={20} /> */}
                         <span>{t('configuration.optionSpanish')}</span>
                     </button>
                 </div>

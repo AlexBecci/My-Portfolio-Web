@@ -34,7 +34,7 @@ export const Projects = () => {
         }
     };
     return (
-        <div id='proyects' className="max-w-7xl mx-auto px-4 lg:px-0   py-8">
+        <div id='proyects' className="max-w-7xl mx-auto px-4 lg:px-4    py-8">
             <h2 className="text-4xl text-rose-500 font-bold text-start mb-8">{t('projects.title')}</h2>
             <div className="relative ">
                 {/* Botón para desplazar a la izquierda */}
@@ -69,7 +69,7 @@ export const Projects = () => {
                                             href={project.githubUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-blue-500 hover:underline bg-slate-900/70 rounded-md p-1 "
+                                            className="buttonsProyects text-xs rounded-md p-1 "
                                         >
                                             GitHub
                                         </a>
@@ -77,7 +77,7 @@ export const Projects = () => {
                                             href={project.demoUrl}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-blue-500 hover:underline bg-slate-900/70 rounded-md p-1 "
+                                            className="buttonsProyects text-xs rounded-md p-1 "
                                         >
                                             Demo
                                         </a>

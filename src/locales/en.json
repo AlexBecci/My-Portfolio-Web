@@ -108,9 +108,9 @@
     ]
   },
   "Skills": {
-    "lenguage": "Lenguajes de Programación",
-    "libraries": "Tecnologías y Librerías",
-    "Tools": "Herramientas de Desarrollo",
-    "Databases": "Bases de Datos"
+    "lenguage": "Programming Languages",
+    "libraries": "Technologies & Libraries",
+    "Tools": "Development Tools",
+    "Databases": "Databases"
   }
 }

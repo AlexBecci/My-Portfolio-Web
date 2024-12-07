@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  
+    --tw-scrollbar-bg: #00000004;
+    /* Background color of the scrollbar */
+    --tw-scrollbar-thumb: #f43f5e ;
+    /* Thumb color of the scrollbar */
+    --tw-scrollbar-thumb-hover: #d4314c;
+    /* Hover color of the thumb */
+    scrollbar-color: var(--tw-scrollbar-thumb) var(--tw-scrollbar-bg);
+    scrollbar-width: thin;
+  }
+  
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+  
+  html::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--tw-scrollbar-thumb);
+    border-radius: 8px;
+  }
+  
+  html::-webkit-scrollbar-thumb:hover,
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--tw-scrollbar-thumb-hover);
+  }
+  
+  html::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-track {
+    background-color: var(--tw-scrollbar-bg);
+  }
+
 /* AGREGAR /static/ para produccion */
 @font-face {
     font-family: "Gotham Black";
@@ -128,11 +162,25 @@ body {
     color: white;
     transition: all 0.15s ease-in-out; /* Suavizado en las transiciones */
 }
-
+.buttonsProyects{
+    padding: 4px 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    cursor: pointer;
+    background-color: #d81b4a; /* Color de fondo por defecto */
+    color: white;
+    transition: all 0.15s ease-in-out; /* Suavizado en las transiciones */
+}
+.buttonsProyects:hover {
+    background-color: #d81b4a96; /* Cambio de color en hover */
+    transform: scale(1.1); /* Expande el botón ligeramente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el hover */
+}
 /* Animación cuando el botón es hover */
 .button:hover {
     background-color: #072858; /* Cambio de color en hover */
-    transform: scale(1.1); /* Expande el botón ligeramente */
+    transform: Fscale(1.1); /* Expande el botón ligeramente */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el hover */
 }
 

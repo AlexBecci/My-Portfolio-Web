@@ -8,7 +8,7 @@ export function Github() {
     };
 
     return (
-        <div id="github" className="flex flex-col max-w-7xl  bg-black/20 sm:mx-4 lg:mx-auto rounded-md mx-4 p-4 lg:p-0 items-center pb-10">
+        <div id="github" className="flex flex-col max-w-7xl  bg-black/20 sm:mx-4  xl:mx-auto rounded-md mx-4 p-4  items-center pb-10">
             <h1 className="text-3xl font-bold pb-5">
                 Git <span className="text-green-500/80">Hub</span>
             </h1>
