@@ -25,14 +25,16 @@ export function Component() {
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
     const { t } = useTranslation();
+    // Mapeo dinámico de los enlaces del menú
     const navItems: NavItem[] = [
-        { label: 'Home', href: '#' },
-        { label: 'Proyects', href: '#proyects' },
-        { label: 'Services', href: '#services' },
-        { label: 'Skills', href: '#skills' },
-        { label: 'GitStatus', href: '#github' },
-        { label: 'Contact', href: '#contact' },
-    ]
+        { label: t('navbar.home'), href: '#' },
+        { label: t('navbar.projects'), href: '#projects' },
+        { label: t('navbar.services'), href: '#services' },
+        { label: t('navbar.skills'), href: '#skills' },
+        { label: t('navbar.gitStatus'), href: '#github' },
+        { label: t('navbar.contact'), href: '#contact' },
+    ];
+
 
     //nueva forma de importar la data
     const skillCards = t('SkillSection.cards', { returnObjects: true }) as SkillCard[];

@@ -103,5 +103,13 @@
     "libraries": "Technologies & Libraries",
     "Tools": "Development Tools",
     "Databases": "Databases"
+  },
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "skills": "Skills",
+    "gitStatus": "Git Status",
+    "contact": "Contact"
   }
 }

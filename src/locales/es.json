@@ -54,7 +54,6 @@
                 "githubUrl": "https://github.com/AlexBecci",
                 "demoUrl": "https://autofoodbecci.up.railway.app/"
             },
-
             {
                 "title": "Aplicación de Catálogos de Películas",
                 "description": "App que consume una API de películas para explorar información detallada, ver tráilers y descubrir lo último en cartelera. Ideal para cinéfilos que buscan estar actualizados.",
@@ -104,5 +103,13 @@
         "libraries": "Tecnologías y Librerías",
         "Tools": "Herramientas de Desarrollo",
         "Databases": "Bases de Datos"
+    },
+    "navbar": {
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "services": "Servicios",
+        "skills": "Habilidades",
+        "gitStatus": "Estado de Git",
+        "contact": "Contacto"
     }
 }
