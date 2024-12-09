@@ -35,7 +35,6 @@ export function Component() {
         { label: t('navbar.contact'), href: '#contact' },
     ];
 
-
     //nueva forma de importar la data
     const skillCards = t('SkillSection.cards', { returnObjects: true }) as SkillCard[];
 
