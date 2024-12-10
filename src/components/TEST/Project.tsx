@@ -34,7 +34,7 @@ export const Projects = () => {
         }
     };
     return (
-        <div id='proyects' className="max-w-7xl mx-auto px-4 lg:px-4    py-8">
+        <div id='projects' className="max-w-7xl mx-auto px-4 lg:px-4    py-8">
             <h2 className="text-4xl text-rose-500 font-bold text-start mb-8">{t('projects.title')}</h2>
             <div className="relative ">
                 {/* Botón para desplazar a la izquierda */}
@@ -59,11 +59,29 @@ export const Projects = () => {
                                         className="h-[200px] w-full object-cover transition-all duration-300 rounded-lg cursor-pointer filter grayscale hover:grayscale-0"
                                     />
                                 </div>
+
                                 <div className="p-4 flex-grow flex flex-col justify-between">
                                     <div>
                                         <h3 className="text-lg  text-white mb-2">{project.title}</h3>
                                         <p className="text-gray-300 text-sm">{project.description}</p>
                                     </div>
+                                   {/*  <div className="flex flex-wrap gap-2 text-[70%]">
+                                        <span className="bg-blue-600/10 rounded-full p-1  text-blue-600 hover:bg-blue-600/20">
+                                            TypeScript
+                                        </span>
+                                        <span className="bg-yellow-600/10 rounded-full p-1  text-yellow-600 hover:bg-yellow-600/20">
+                                            JavaScript
+                                        </span>
+                                        <span className="bg-cyan-600/10 rounded-full p-1  text-cyan-600 hover:bg-cyan-600/20">
+                                            React
+                                        </span>
+                                        <span className="bg-green-600/10 rounded-full p-1  text-green-600 hover:bg-green-600/20">
+                                            Node.js
+                                        </span>
+                                        <span className="bg-purple-600/10 rounded-full p-1  text-purple-600 hover:bg-purple-600/20">
+                                            PostgreSQL
+                                        </span>
+                                    </div> */}
                                     <div className="flex justify-between">
                                         <a
                                             href={project.githubUrl}
