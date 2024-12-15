@@ -79,7 +79,7 @@
                 "title": "Poke React",
                 "description": "Aplicación que consulta la API de Pokémon para obtener los diferentes Pokémon, permitiendo filtrar por atributos, nombres y más.",
                 "imageUrl": "/images/pokemon.jpg",
-                "githubUrl": "https://github.com/tu_usuario/poke-react",
+                "githubUrl": "https://github.com/AlexBecci/Poke-React/tree/master",
                 "demoUrl": "https://poke-react-kohl.vercel.app/"
             },
             {
