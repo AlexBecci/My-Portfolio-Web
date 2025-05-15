@@ -50,7 +50,7 @@ export function Component() {
                     <div className="text-2xl font-bold">
                         be<span className="text-rose-500">cc</span>i
                     </div>
-                    <ul className=" space-x-8 md:flex">
+                    <ul className=" space-x-4 lg:space-x-8 md:flex">
                         <div className='hidden md:flex space-x-8'>
                             {navItems.map((item) => (
                                 <li key={item.label}>
