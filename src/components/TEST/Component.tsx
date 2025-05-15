@@ -8,6 +8,7 @@ import { SkillCard } from './SkillCard'
 import { Projects } from './Project'
 import { Github } from './GitHubCalendary'
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
+import { ButtonsTemplates } from './ButtonsTemplate'
 
 interface NavItem {
     label: string
@@ -124,10 +125,7 @@ export function Component() {
                                 </span>
                             ))}
                         </div>
-                        <a href="/cv.pdf" download className="rounded button  px-8 py-3 font-semibold text-white transition hover:bg-rose-900">
-
-                            {t('button')}
-                        </a>
+                        <ButtonsTemplates />
                     </div>
                 </section>
                 <Projects />

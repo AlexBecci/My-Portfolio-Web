@@ -3,7 +3,9 @@
         "greeting": "¡Hola! Soy Alex Becci",
         "description": "Desarrollador Full-Stack con sólida experiencia en la creación de aplicaciones web escalables y eficientes. Con un enfoque en las mejores prácticas de desarrollo, he participado en proyectos de diversas envergaduras, desde startups hasta empresas consolidadas."
     },
-    "button": "Descargar CV",
+    "buttonCv": "Descargar CV",
+    "buttonLinkedin": "Linkedin",
+    "buttonGithub": "Github",
     "SkillSection": {
         "title": "",
         "type": "Servicios",
