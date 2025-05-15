@@ -3,7 +3,7 @@ import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa"
 
 export const ButtonsTemplates = () => {
     return (
-        <div className='flex justify-between mx-auto gap-4'>
+        <div className='flex flex-col sm:flex-wrap justify-between mx-auto gap-4'>
             <a onClick={() => window.open('https://www.linkedin.com/in/becci-alex/')} className="rounded button flex items-center gap-2 px-8 py-3 font-semibold text-white hover:text-sky-500 transition hover:bg-slate-900 border hover:border-sky-900">
                 <FaLinkedin />
                 {t('buttonLinkedin')}
