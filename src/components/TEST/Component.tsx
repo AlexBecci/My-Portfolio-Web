@@ -111,7 +111,7 @@ export function Component() {
                 {/* Hero Section */}
                 <section id='#' className="relative flex min-h-[90dvh] mb-16 sm:mb-4 lg:mb-16 items-center px-4">
                     <div className="mx-auto max-w-7xl pt-24 flex flex-col items-center">
-                        <img src="/images/alex.jpeg" alt="Alex Becci" className="w-48 h-48 rounded-full mb-8" />
+                        <img src="/images/foto_1.jpeg" alt="Alex Becci" className="w-48 h-48 rounded-full mb-8" />
                         <h1 className="mb-4 text-5xl font-bold leading-tight md:text-7xl">
                             {t('hero.greeting')}
                         </h1>
