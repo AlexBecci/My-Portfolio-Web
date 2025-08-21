@@ -36,7 +36,7 @@ export const Projects = () => {
     return (
         <div id='projects' className="max-w-7xl mx-auto px-4 lg:px-4    py-8">
             <h2 className="text-4xl text-rose-500 font-bold text-start mb-8">{t('projects.title')}</h2>
-            <div className="relative ">
+            <div className="relative px-4 md:px-12">
                 {/* Botón para desplazar a la izquierda */}
                 <button
                     onClick={scrollLeft}
@@ -47,7 +47,7 @@ export const Projects = () => {
                 {/* Carrusel */}
                 <div
                     ref={carouselRef}
-                    className="flex space-x-4  overflow-x-scroll scroll-smooth scrollbar-hide"
+                    className="flex space-x-4  overflow-x-scroll scroll-smooth scrollbar-hide px-2"
                 >
                     {
                         projects.map((project, index) => (

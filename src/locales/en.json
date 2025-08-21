@@ -50,6 +50,13 @@
     "title": "Proyects",
     "list": [
       {
+        "title": "Corporate Website for Servipol Group",
+        "description": "Professional landing page developed for Servipol Group SRL, a company specialized in industrial maintenance. The site highlights services, clients, success stories, and includes a budget request form connected to an email-sending API.",
+        "imageUrl": "/images/servipol_portada.jpg",
+        "githubUrl": "https://github.com/AlexBecci",
+        "demoUrl": "https://www.servipol.com.ar/"
+      },
+      {
         "title": "Meal Management System",
         "description": "System for companies allowing users to request specific dishes and manage daily menus. Includes authentication and a well-structured database.",
         "imageUrl": "/images/homeDesktop.jpg",
@@ -88,7 +95,7 @@
         "title": "Seshat",
         "description": "Creative platform for sharing stories, poems, and narratives. Promotes diversity and creativity.",
         "imageUrl": "/images/seshat.png",
-        "githubUrl": "",
+        "githubUrl": "https://github.com/AlexBecci",
         "demoUrl": "https://www.seshat.website"
       },
       {
