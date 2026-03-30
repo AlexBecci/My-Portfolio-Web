@@ -31,7 +31,7 @@ export function Portfolio() {
                 <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-10  shadow-lg max-w-3xl mx-auto mt-10">
                     <h1 className="text-4xl font-extrabold mb-6">Bienvenido, soy Becci Alex</h1>
                     <p className="text-lg mb-8 leading-relaxed">
-                        Soy un desarrollador Full Stack apasionado por la creación de aplicaciones web modernas. Me especializo en frontend y backend, con experiencia en React, Next.js, Python y NestJS. ¡Explora mis proyectos para conocer más!
+                        Soy un desarrollador de software apasionado por la creación de aplicaciones web modernas. Me especializo en frontend y backend, con experiencia en React, Next.js, Python y NestJS. ¡Explora mis proyectos para conocer más!
                     </p>
                     <button className="flex items-center text-sm  rounded-md p-3 bg-white text-blue-800 hover:bg-gray-200 transition-colors duration-300 shadow-md">
                         <span>Ver mi portafolio</span>
@@ -55,7 +55,7 @@ export function Portfolio() {
                         <div className="h-1 bg-pink-600 w-1/6" />
                     </div>
                     <p className="text-gray-700 mb-6">
-                        Soy un desarrollador full stack con experiencia en frontend y backend, trabajando actualmente en <span className="">Bingo Oasis Pilar</span>, además de colaborar en otros proyectos freelance.
+                        Soy un desarrollador de software con experiencia en frontend y backend, trabajando actualmente en <span className="">Bingo Oasis Pilar</span>, además de colaborar en otros proyectos freelance.
                     </p>
 
                     {/* Sección: Idiomas */}

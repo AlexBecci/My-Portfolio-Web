@@ -1,7 +1,7 @@
 {
   "hero": {
     "greeting": "Hello, I'm Alex Becci",
-    "description": "Full-Stack Developer with a solid background in building scalable and efficient web applications. With a focus on best development practices, I have participated in projects of various sizes, from startups to established companies."
+    "description": "Software Developer with a solid background in building scalable and efficient applications. With a focus on best development practices, I have participated in projects of various sizes, from startups to established companies."
   },
   "buttonCv": "Download CV",
   "buttonLinkedin": "Linkedin",
@@ -33,7 +33,7 @@
       {
         "icon": "💼",
         "title": "Freelancing",
-        "description": "Delivering tailored software solutions to clients, leveraging expertise in full-stack development. Skilled in project management and effective communication to meet client expectations."
+        "description": "Delivering tailored software solutions to clients, leveraging expertise in Software development. Skilled in project management and effective communication to meet client expectations."
       }
     ]
   },
