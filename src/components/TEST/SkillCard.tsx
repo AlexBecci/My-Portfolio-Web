@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 export function SkillCard() {
     const { t } = useTranslation();
-    // Datos tipados
     const skills: { [key: string]: SkillItem[] } = {
         languages: [
             { name: "TypeScript", icon: "/images/typescript.png" },
@@ -37,16 +37,19 @@ export function SkillCard() {
         ],
     };
 
-
     return (
-        <section id="skills" className="py-20 mx-4 md:mx-12F">
+        <section id="skills" className="py-20 mx-4 md:mx-12">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-4xl font-bold text-rose-500 mb-16 relative">
+                <motion.h2
+                    className="text-4xl font-bold text-rose-500 mb-16"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                >
                     Skills
-                    {/*   <span className="absolute bottom-0 left-0 w-20 h-1 bg-red-500"></span> */}
-                </h2>
+                </motion.h2>
 
-                {/* Sección de Carruseles */}
                 <Carousel title={t('Skills.lenguage')} items={skills.languages} />
                 <Carousel title={t('Skills.libraries')} items={skills.technologies} />
                 <Carousel title={t('Skills.Tools')} items={skills.tools} />
@@ -56,7 +59,6 @@ export function SkillCard() {
     );
 }
 
-// Definición de tipos para las props de Carousel
 type SkillItem = {
     name: string;
     icon: string;
@@ -68,32 +70,37 @@ type CarouselProps = {
 };
 
 const Carousel: React.FC<CarouselProps> = ({ title, items }) => {
-
     return (
         <div className="mb-16">
-
-            <h3 className="text-xl text-white mb-8 font-semibold">{title}</h3>
-            <div className="relative">
-
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                    {items.map((item) => (
-                        <div
-                            key={item.name}
-                            className="group relative bg-gray-800/50 rounded-xl p-6 hover:bg-gray-800/80 transition-all duration-300 transform hover:-translate-y-1"
-                        >
-                            <div className="flex flex-col items-center space-y-4">
-                                <img
-                                    src={item.icon}
-                                    alt={item.name}
-                                    className="w-12 h-12 rounded-full object-contain group-hover:scale-110 transition-transform duration-300"
-                                />
-                                <span className="text-gray-300 text-sm font-medium">{item.name}</span>
-                            </div>
+            <motion.h3
+                className="text-xl text-white mb-8 font-semibold"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4 }}
+            >
+                {title}
+            </motion.h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                {items.map((item, index) => (
+                    <motion.div
+                        key={item.name}
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.4, delay: index * 0.06 }}
+                        className="glass-card group rounded-xl p-6"
+                    >
+                        <div className="flex flex-col items-center space-y-4">
+                            <img
+                                src={item.icon}
+                                alt={item.name}
+                                className="w-12 h-12 rounded-full object-contain group-hover:scale-110 transition-transform duration-300"
+                            />
+                            <span className="text-gray-300 text-sm font-medium group-hover:text-white transition-colors duration-300">{item.name}</span>
                         </div>
-                    ))}
-                </div>
-
-
+                    </motion.div>
+                ))}
             </div>
         </div>
     );

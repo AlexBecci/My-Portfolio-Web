@@ -2,46 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================
+   SCROLLBAR
+   ========================================== */
 body {
-  
-    --tw-scrollbar-bg: #00000004;
-    /* Background color of the scrollbar */
-    --tw-scrollbar-thumb: #f43f5e ;
-    /* Thumb color of the scrollbar */
-    --tw-scrollbar-thumb-hover: #d4314c;
-    /* Hover color of the thumb */
+    --tw-scrollbar-bg: #0f172a;
+    --tw-scrollbar-thumb: #f43f5e;
+    --tw-scrollbar-thumb-hover: #e11d48;
     scrollbar-color: var(--tw-scrollbar-thumb) var(--tw-scrollbar-bg);
     scrollbar-width: thin;
-  }
-  
-  html::-webkit-scrollbar,
-  body::-webkit-scrollbar {
-    width: 16px;
-    height: 16px;
-  }
-  
-  html::-webkit-scrollbar-thumb,
-  body::-webkit-scrollbar-thumb {
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
     background-color: var(--tw-scrollbar-thumb);
     border-radius: 8px;
-  }
-  
-  html::-webkit-scrollbar-thumb:hover,
-  body::-webkit-scrollbar-thumb:hover {
-    background-color: var(--tw-scrollbar-thumb-hover);
-  }
-  
-  html::-webkit-scrollbar-track,
-  body::-webkit-scrollbar-track {
-    background-color: var(--tw-scrollbar-bg);
-  }
+}
 
-/* AGREGAR /static/ para produccion */
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--tw-scrollbar-thumb-hover);
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background-color: var(--tw-scrollbar-bg);
+}
+
+/* Hide scrollbar for carousel */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* ==========================================
+   FONTS
+   ========================================== */
 @font-face {
     font-family: "Gotham Black";
     src: url(/fonts/Gotham-Black.otf) format("opentype");
     font-weight: bold;
-    font-style: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -49,6 +60,7 @@ body {
     src: url(/fonts/Gotham-Medium.otf) format("opentype");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -56,34 +68,48 @@ body {
     src: url(/fonts/Gotham-Book.otf) format("opentype");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
-/* MAS FUERTE */
 .textGothamBlack {
-    font-family: "Gotham Black";
+    font-family: "Gotham Black", system-ui, sans-serif;
 }
 
-/* SEGUNDO MAS FUERTE */
 .textGothamMedium {
-    font-family: "Gotham Medium";
+    font-family: "Gotham Medium", system-ui, sans-serif;
 }
 
-/* TERCERO MAS FUERTE */
 .textGothamBook {
-    font-family: "Gotham Book";
+    font-family: "Gotham Book", system-ui, sans-serif;
 }
-/* 
-body {
-    background-color: black;
-  } */
-/* ESTILOS BORDER CARDS */
+
+/* ==========================================
+   SMOOTH SCROLL
+   ========================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ==========================================
+   GRADIENT TEXT
+   ========================================== */
+.gradient-text {
+    background: linear-gradient(135deg, #f43f5e, #ec4899, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ==========================================
+   ANIMATED BORDER CARDS
+   ========================================== */
 .animated-border {
     position: relative;
     display: inline-block;
-    padding: 0.5rem 1rem; /* Ajusta según sea necesario */
+    padding: 0.5rem 1rem;
     background: transparent;
     border: 2px solid transparent;
-    border-radius: 9999px; /* Para bordes redondeados */
+    border-radius: 9999px;
     background-image: linear-gradient(white, white), linear-gradient(90deg, #ff4d4d, #ff884d, #ffda4d, #4dff4d, #4ddaff, #4d88ff, #ff4dff);
     background-origin: border-box;
     background-clip: padding-box, border-box;
@@ -99,23 +125,27 @@ body {
     }
 }
 
+/* ==========================================
+   TECH SKILL TAGS
+   ========================================== */
 :root {
-    --typescript: #3178C6; 
-    --react: #61DAFB; 
-    --nextjs: #000000; 
-    --python: #3572A5; 
-    --nestjs: #E15F00; 
-    --tailwind: #38BDF8; 
-    --color1: var(--typescript);
-    --color2: var(--react);
-    --color3: var(--nextjs);
-    --color4: var(--python);
-    --color5: var(--nestjs);
-    --color6: var(--tailwind);
-  }
+    --typescript: #3178C6;
+    --react: #61DAFB;
+    --nextjs: #ffffff;
+    --python: #3572A5;
+    --nestjs: #E15F00;
+    --tailwind: #38BDF8;
+}
 
 .skill-tag {
     position: relative;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
 }
 
 .skill-tag::before {
@@ -127,80 +157,165 @@ body {
     height: 100%;
     border: 2px solid transparent;
     border-radius: inherit;
-    opacity: 30%;
-    animation: color-change 2s infinite alternate;
+    opacity: 0.4;
+    animation: color-change 4s infinite alternate;
 }
 
 @keyframes color-change {
-    0% {
-        border-color: var(--typescript);
-    }
-    25% {
-        border-color: var(--react);
-    }
-    50% {
-        border-color: var(--nextjs);
-    }
-    75% {
-        border-color: var(--nestjs);
-    }
-    100% {
-        border-color: var(--tailwind);
-    }
+    0% { border-color: var(--typescript); }
+    20% { border-color: var(--react); }
+    40% { border-color: var(--nextjs); }
+    60% { border-color: var(--python); }
+    80% { border-color: var(--nestjs); }
+    100% { border-color: var(--tailwind); }
 }
 
+/* ==========================================
+   PROFILE IMAGE GLOW
+   ========================================== */
+.profile-glow {
+    position: relative;
+}
 
-/* BUTTON */
-/* Estilo base del botón */
+.profile-glow::before {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #f43f5e, #8b5cf6, #3b82f6, #f43f5e);
+    background-size: 300% 300%;
+    animation: glow-rotate 4s ease-in-out infinite;
+    z-index: -1;
+    opacity: 0.7;
+    filter: blur(28px);
+}
+
+@keyframes glow-rotate {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* ==========================================
+   FLOATING ANIMATION
+   ========================================== */
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ==========================================
+   GLASS CARD EFFECT
+   ========================================== */
+.glass-card {
+    background: rgba(30, 41, 59, 0.5);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    background: rgba(30, 41, 59, 0.7);
+    border-color: rgba(244, 63, 94, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -12px rgba(244, 63, 94, 0.15);
+}
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
 .button {
     padding: 10px 20px;
     font-size: 16px;
     text-transform: uppercase;
     border: 2px solid transparent;
     cursor: pointer;
-    background-color: #104ca5; /* Color de fondo por defecto */
+    background-color: #104ca5;
     color: white;
-    transition: all 0.15s ease-in-out; /* Suavizado en las transiciones */
-}
-.buttonsProyects{
-    padding: 4px 8px;
-    font-size: 12px;
-    text-transform: uppercase;
-    border: 2px solid transparent;
-    cursor: pointer;
-    background-color: #d81b4a; /* Color de fondo por defecto */
-    color: white;
-    transition: all 0.15s ease-in-out; /* Suavizado en las transiciones */
-}
-.buttonsProyects:hover {
-    background-color: #d81b4a96; /* Cambio de color en hover */
-    transform: scale(1.1); /* Expande el botón ligeramente */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el hover */
-}
-/* Animación cuando el botón es hover */
-.button:hover {
-    background-color: #072858; /* Cambio de color en hover */
-    transform: Fscale(1.1); /* Expande el botón ligeramente */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para el hover */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Animación de borde con un efecto de desvanecimiento */
+.button:hover {
+    background-color: #072858;
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(16, 76, 165, 0.3);
+}
+
 .button:focus {
     outline: none;
-    animation: borderAnimation 0.5s ease-in-out forwards; /* Animación del borde */
+    animation: borderAnimation 0.5s ease-in-out forwards;
 }
 
-/* Keyframes para la animación del borde */
+.buttonsProyects {
+    padding: 6px 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #f43f5e, #e11d48);
+    color: white;
+    border-radius: 6px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.buttonsProyects:hover {
+    background: linear-gradient(135deg, #e11d48, #be123c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(244, 63, 94, 0.4);
+}
+
 @keyframes borderAnimation {
-    0% {
-        border-color: transparent;
-    }
-    100% {
-        border-color: #2a32a5; /* Cambio de color del borde */
-    }
+    0% { border-color: transparent; }
+    100% { border-color: #2a32a5; }
 }
 
-/* SCROLL */
-html {
-    scroll-behavior: smooth;
+/* ==========================================
+   SECTION DIVIDER
+   ========================================== */
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(244, 63, 94, 0.3), transparent);
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+/* ==========================================
+   BACKGROUND DECORATIONS
+   ========================================== */
+.bg-grid-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+}
+
+.bg-glow-rose {
+    position: relative;
+}
+
+.bg-glow-rose::after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(244, 63, 94, 0.08) 0%, transparent 70%);
+    border-radius: 9999px;
+    pointer-events: none;
+}
+
+.bg-glow-rose::before {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    left: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
+    border-radius: 9999px;
+    pointer-events: none;
 }

@@ -50,6 +50,13 @@
         "title": "Proyectos",
         "list": [
             {
+                "title": "Voz Urbana",
+                "description": "Aplicación móvil orientada a la participación ciudadana que permite reportar incidencias urbanas como problemas de alumbrado, espacios públicos o seguridad. Incluye geolocalización en tiempo real, visualización de reportes en mapa, sistema de validación comunitaria y seguimiento del estado de cada incidencia.",
+                "imageUrl": "/images/voz-urbana.png",
+                "githubUrl": "https://github.com/AlexBecci",
+                "demoUrl": "https://muni-alerta-production.up.railway.app"
+            },
+            {
                 "title": "Sitio Corporativo Servipol Group",
                 "description": "Landing page profesional desarrollada para Servipol Group SRL, empresa especializada en mantenimiento industrial. El sitio destaca los servicios, clientes, casos de éxito y permite solicitar presupuestos mediante un formulario conectado a una API de envío de mails.",
                 "imageUrl": "/images/servipol_portada.jpg",

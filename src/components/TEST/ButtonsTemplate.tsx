@@ -1,23 +1,44 @@
 import { t } from "i18next"
 import { FaFilePdf, FaGithub, FaLinkedin } from "react-icons/fa"
+import { motion } from "framer-motion"
 
 export const ButtonsTemplates = () => {
     return (
         <div className='flex flex-col sm:flex-row justify-between mx-auto gap-4'>
-            <a onClick={() => window.open('https://www.linkedin.com/in/becci-alex/')} className="rounded button flex items-center gap-2 px-8 py-3 font-semibold text-white hover:text-sky-500 transition hover:bg-slate-900 border hover:border-sky-900">
-                <FaLinkedin />
+            <motion.a
+                href="https://www.linkedin.com/in/becci-alex/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl flex items-center gap-2 px-8 py-3 font-semibold text-white bg-slate-800/50 backdrop-blur-sm border border-white/10 hover:text-sky-400 hover:border-sky-500/40 hover:bg-sky-500/10 transition-all duration-300"
+                whileHover={{ scale: 1.03, y: -2 }}
+                whileTap={{ scale: 0.97 }}
+            >
+                <FaLinkedin size={18} />
                 {t('buttonLinkedin')}
-            </a>
+            </motion.a>
 
-            <a href="/cv.pdf" download className="rounded button flex items-center gap-2 px-8 py-3 font-semibold text-white hover:text-rose-500 transition hover:bg-slate-900 border hover:border-rose-900">
-                <FaFilePdf />
+            <motion.a
+                href="/cv.pdf"
+                download
+                className="rounded-xl flex items-center gap-2 px-8 py-3 font-semibold text-white bg-slate-800/50 backdrop-blur-sm border border-white/10 hover:text-rose-400 hover:border-rose-500/40 hover:bg-rose-500/10 transition-all duration-300"
+                whileHover={{ scale: 1.03, y: -2 }}
+                whileTap={{ scale: 0.97 }}
+            >
+                <FaFilePdf size={18} />
                 {t('buttonCv')}
-            </a>
+            </motion.a>
 
-            <a onClick={() => window.open('https://github.com/AlexBecci')} download className="rounded button flex items-center gap-2 px-8 py-3 font-semibold text-white hover:text-purple-500 transition hover:bg-slate-900 border hover:border-purple-900">
-                <FaGithub />
+            <motion.a
+                href="https://github.com/AlexBecci"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl flex items-center gap-2 px-8 py-3 font-semibold text-white bg-slate-800/50 backdrop-blur-sm border border-white/10 hover:text-purple-400 hover:border-purple-500/40 hover:bg-purple-500/10 transition-all duration-300"
+                whileHover={{ scale: 1.03, y: -2 }}
+                whileTap={{ scale: 0.97 }}
+            >
+                <FaGithub size={18} />
                 {t('buttonGithub')}
-            </a>
+            </motion.a>
         </div>
     )
 }

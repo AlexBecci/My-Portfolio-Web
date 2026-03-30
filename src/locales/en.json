@@ -50,6 +50,13 @@
     "title": "Projects",
     "list": [
       {
+        "title": "Urban Voice",
+        "description": "Mobile application focused on citizen participation that allows users to report urban issues such as street lighting problems, public space damage, or safety concerns. It includes real-time geolocation, map-based report visualization, community validation system, and status tracking for each report.",
+        "imageUrl": "/images/voz-urbana.png",
+        "githubUrl": "https://github.com/AlexBecci",
+        "demoUrl": "https://muni-alerta-production.up.railway.app"
+      },
+      {
         "title": "Corporate Website for Servipol Group",
         "description": "Professional landing page developed for Servipol Group SRL, a company specialized in industrial maintenance. The site highlights services, clients, success stories, and includes a budget request form connected to an email-sending API.",
         "imageUrl": "/images/servipol_portada.jpg",
