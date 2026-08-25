@@ -141,11 +141,6 @@ export function Component() {
                                     {t('hero.projectsCta')}
                                     <FaArrowRight size={14} aria-hidden="true" />
                                 </motion.a>
-                                <motion.div className="mb-8 flex flex-wrap justify-center gap-2 lg:justify-start" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.46 }}>
-                                    {['TypeScript', 'React', 'Next.js', 'Python', 'NestJS', 'Tailwind'].map((tech) => (
-                                        <span key={tech} className="skill-tag cursor-default rounded-full bg-white/10 px-4 py-1.5 text-sm">{tech}</span>
-                                    ))}
-                                </motion.div>
                                 <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.52 }}>
                                     <ButtonsTemplates />
                                 </motion.div>
@@ -161,7 +156,6 @@ export function Component() {
                                                 <p className="text-sm font-semibold text-white">Alex Becci</p>
                                                 <p className="mt-1 text-xs uppercase tracking-[0.16em] text-slate-400">Software Developer</p>
                                             </div>
-                                            <span className="text-xs font-medium text-rose-400">WEB · API · UI</span>
                                         </div>
                                     </div>
                                 </div>
