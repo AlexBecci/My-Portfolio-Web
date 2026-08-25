@@ -27,16 +27,16 @@ export const ContributionGrid: React.FC<ContributionGridProps> = ({ username, to
             <div className="flex">
                 {/* Days of week labels */}
                 <div className="flex flex-col justify-between text-sm text-gray-400 mr-2">
-                    {DAYS_OF_WEEK.map(day => (
-                        <span key={day} className="h-3">{day}</span>
+                    {DAYS_OF_WEEK.map((day, dayIndex) => (
+                        <span key={`${day}-${dayIndex}`} className="h-3">{day}</span>
                     ))}
                 </div>
 
                 {/* Contribution grid */}
                 <div className="flex-1 flex gap-[3px]">
-                    {data?.weeks.map((week: any, weekIndex: any) => (
+                    {data?.weeks.map((week, weekIndex) => (
                         <div key={weekIndex} className="flex flex-col gap-[3px]">
-                            {week.contributionDays.map((day: any, dayIndex: any) => (
+                            {week.contributionDays.map((day, dayIndex) => (
                                 <div
                                     key={dayIndex}
                                     className="w-3 h-3 rounded-sm transition-all duration-200 hover:ring-2 hover:ring-green-300/30"

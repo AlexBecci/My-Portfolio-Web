@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">Dashboard de Mat Point Tournaments</title>
+  <desc id="description">Panel oscuro de gestión de torneos internos de jiu-jitsu con métricas, gráficos y navegación lateral.</desc>
+  <defs>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#92e322" stop-opacity=".44"/>
+      <stop offset="1" stop-color="#92e322" stop-opacity=".02"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#070908"/>
+  <rect width="232" height="900" fill="#0b0e0c" stroke="#202420"/>
+
+  <g font-family="Inter, Segoe UI, sans-serif">
+    <g transform="translate(24 24)">
+      <circle cx="20" cy="20" r="20" fill="#91e21d"/>
+      <path d="M10 22c5-11 15-11 20 0M13 14l7 19 7-19" fill="none" stroke="#071006" stroke-width="3" stroke-linecap="round"/>
+      <text x="54" y="17" font-size="18" font-weight="800" fill="#fff">MAT POINT</text>
+      <text x="54" y="36" font-size="10" font-weight="700" fill="#8b958e" letter-spacing="2">TOURNAMENTS</text>
+    </g>
+
+    <g transform="translate(18 92)" font-size="15">
+      <rect width="196" height="44" rx="9" fill="#172015"/>
+      <rect width="4" height="44" rx="2" fill="#91e21d"/>
+      <circle cx="26" cy="22" r="7" fill="#91e21d"/>
+      <text x="47" y="27" font-weight="700" fill="#fff">Dashboard</text>
+      <g fill="#8e9690">
+        <text x="18" y="174">Torneos</text><text x="18" y="226">Participantes</text><text x="18" y="278">Peleas</text><text x="18" y="330">Ranking</text><text x="18" y="382">Configuración</text><text x="18" y="434">Historial</text>
+      </g>
+      <g fill="#424a44">
+        <circle cx="185" cy="169" r="3"/><circle cx="185" cy="221" r="3"/><circle cx="185" cy="273" r="3"/><circle cx="185" cy="325" r="3"/><circle cx="185" cy="377" r="3"/><circle cx="185" cy="429" r="3"/>
+      </g>
+    </g>
+
+    <g transform="translate(18 770)">
+      <rect width="196" height="108" rx="13" fill="#101410" stroke="#252b26"/>
+      <circle cx="30" cy="32" r="15" fill="#1b2518"/><circle cx="30" cy="32" r="5" fill="#91e21d"/>
+      <text x="55" y="29" font-size="14" font-weight="700" fill="#fff">Dark mode</text>
+      <text x="55" y="48" font-size="11" fill="#778079">Activado</text>
+      <rect x="148" y="20" width="34" height="20" rx="10" fill="#91e21d"/><circle cx="172" cy="30" r="7" fill="#071006"/>
+      <text x="16" y="82" font-size="11" fill="#707972">Versión demo · datos de ejemplo</text>
+    </g>
+
+    <rect x="232" width="1368" height="76" fill="#0b0e0c" stroke="#202420"/>
+    <text x="266" y="45" font-size="15" font-weight="700" fill="#dce1dd">MTR Jiu Jitsu</text>
+    <rect x="380" y="19" width="235" height="38" rx="9" fill="#111512" stroke="#292e2a"/>
+    <text x="399" y="43" font-size="13" fill="#b7bdb8">Torneo interno MTR · Junio 2026</text>
+    <circle cx="1538" cy="38" r="18" fill="#91e21d"/>
+    <text x="1538" y="44" text-anchor="middle" font-size="14" font-weight="800" fill="#071006">PB</text>
+    <text x="1510" y="31" text-anchor="end" font-size="13" font-weight="700" fill="#fff">Profe Owner</text>
+    <text x="1510" y="48" text-anchor="end" font-size="10" fill="#778079">Administrador</text>
+
+    <g transform="translate(270 106)">
+      <text y="30" font-size="31" font-weight="800" fill="#fff">Dashboard</text>
+      <text y="55" font-size="14" fill="#858e87">Resumen de Torneo interno MTR · Junio 2026</text>
+      <rect x="1110" y="0" width="184" height="46" rx="10" fill="#91e21d"/>
+      <text x="1202" y="29" text-anchor="middle" font-size="14" font-weight="800" fill="#071006">Generar peleas</text>
+
+      <g transform="translate(0 86)">
+        <g><rect width="300" height="166" rx="14" fill="#111412" stroke="#242924"/><circle cx="34" cy="37" r="18" fill="#20301a"/><text x="34" y="43" text-anchor="middle" font-size="18" fill="#91e21d">♜</text><rect x="239" y="20" width="43" height="24" rx="12" fill="#132319"/><text x="260" y="36" text-anchor="middle" font-size="11" font-weight="700" fill="#39cf75">+12%</text><text x="24" y="91" font-size="39" font-weight="800" fill="#fff">4</text><text x="24" y="119" font-size="15" fill="#aab1ac">Torneos realizados</text><text x="24" y="143" font-size="12" fill="#646c66">Histórico de la academia</text></g>
+        <g transform="translate(322)"><rect width="300" height="166" rx="14" fill="#111412" stroke="#242924"/><circle cx="34" cy="37" r="18" fill="#20301a"/><text x="34" y="43" text-anchor="middle" font-size="18" fill="#91e21d">◎</text><rect x="246" y="20" width="36" height="24" rx="12" fill="#132319"/><text x="264" y="36" text-anchor="middle" font-size="11" font-weight="700" fill="#39cf75">+7%</text><text x="24" y="91" font-size="39" font-weight="800" fill="#fff">30</text><text x="24" y="119" font-size="15" fill="#aab1ac">Participantes activos</text><text x="24" y="143" font-size="12" fill="#646c66">Inscriptos este mes</text></g>
+        <g transform="translate(644)"><rect width="300" height="166" rx="14" fill="#111412" stroke="#242924"/><circle cx="34" cy="37" r="18" fill="#20301a"/><text x="34" y="43" text-anchor="middle" font-size="18" fill="#91e21d">×</text><rect x="239" y="20" width="43" height="24" rx="12" fill="#132319"/><text x="260" y="36" text-anchor="middle" font-size="11" font-weight="700" fill="#39cf75">+18%</text><text x="24" y="91" font-size="39" font-weight="800" fill="#fff">42</text><text x="24" y="119" font-size="15" fill="#aab1ac">Peleas del mes</text><text x="24" y="143" font-size="12" fill="#646c66">Programadas y finalizadas</text></g>
+        <g transform="translate(966)"><rect width="328" height="166" rx="14" fill="#111412" stroke="#242924"/><circle cx="34" cy="37" r="18" fill="#20301a"/><text x="34" y="43" text-anchor="middle" font-size="18" fill="#91e21d">♨</text><rect x="269" y="20" width="42" height="24" rx="12" fill="#291719"/><text x="290" y="36" text-anchor="middle" font-size="11" font-weight="700" fill="#ef6373">−4%</text><text x="24" y="91" font-size="39" font-weight="800" fill="#fff">23</text><text x="24" y="119" font-size="15" fill="#aab1ac">Finalizaciones</text><text x="24" y="143" font-size="12" fill="#646c66">Sumisiones registradas</text></g>
+      </g>
+
+      <g transform="translate(0 276)">
+        <rect width="856" height="412" rx="14" fill="#111412" stroke="#242924"/>
+        <text x="24" y="37" font-size="18" font-weight="700" fill="#fff">Participación mensual</text>
+        <text x="24" y="60" font-size="12" fill="#727a74">Evolución de inscriptos por torneo</text>
+        <g transform="translate(62 100)" stroke="#252a26">
+          <path d="M0 0h742M0 72h742M0 144h742M0 216h742M0 288h742"/>
+        </g>
+        <path d="M62 314L185 263L309 251L433 199L556 151L680 108L804 70L804 388L62 388Z" fill="url(#area)"/>
+        <path d="M62 314L185 263L309 251L433 199L556 151L680 108L804 70" fill="none" stroke="#91e21d" stroke-width="4" filter="url(#glow)"/>
+        <g font-size="12" fill="#666e68" text-anchor="middle"><text x="62" y="401">Ene</text><text x="185" y="401">Feb</text><text x="309" y="401">Mar</text><text x="433" y="401">Abr</text><text x="556" y="401">May</text><text x="680" y="401">Jun</text></g>
+
+        <g transform="translate(878)">
+          <rect width="416" height="412" rx="14" fill="#111412" stroke="#242924"/>
+          <text x="24" y="37" font-size="18" font-weight="700" fill="#fff">Peleas por cinturón</text>
+          <text x="24" y="60" font-size="12" fill="#727a74">Distribución del torneo actual</text>
+          <g transform="translate(44 98)">
+            <path d="M0 258h330M0 194h330M0 130h330M0 66h330" stroke="#252a26"/>
+            <rect x="28" y="28" width="48" height="230" rx="6" fill="#e5e7eb"/>
+            <rect x="96" y="112" width="48" height="146" rx="6" fill="#3b82f6"/>
+            <rect x="164" y="131" width="48" height="127" rx="6" fill="#a855f7"/>
+            <rect x="232" y="206" width="48" height="52" rx="6" fill="#b45309"/>
+            <rect x="300" y="238" width="24" height="20" rx="5" fill="#5f6661"/>
+            <g y="282" font-size="10" fill="#6f7771" text-anchor="middle"><text x="52" y="280">Blanco</text><text x="120" y="280">Azul</text><text x="188" y="280">Violeta</text><text x="256" y="280">Marrón</text><text x="312" y="280">Negro</text></g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

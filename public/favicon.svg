@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Alex Becci">
+  <defs>
+    <linearGradient id="accent" x1="10" y1="8" x2="54" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f43f5e"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0f172a"/>
+  <path d="M14 17h12c8.5 0 13 4 13 10.2 0 3.7-1.8 6.5-5 8.1 5 1.4 7.5 4.6 7.5 9.3C41.5 52 36 56 26.7 56H14V17Zm11.2 15c4.4 0 6.6-1.5 6.6-4.6 0-3-2.2-4.4-6.6-4.4h-4v9h4Zm1.1 17.8c5.1 0 7.6-1.8 7.6-5.5 0-3.6-2.5-5.4-7.6-5.4h-5.1v10.9h5.1Z" fill="#f8fafc"/>
+  <path d="M44 14h8v8h-8z" rx="2" fill="url(#accent)"/>
+</svg>

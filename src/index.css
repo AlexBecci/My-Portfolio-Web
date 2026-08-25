@@ -11,6 +11,19 @@ body {
     --tw-scrollbar-thumb-hover: #e11d48;
     scrollbar-color: var(--tw-scrollbar-thumb) var(--tw-scrollbar-bg);
     scrollbar-width: thin;
+    min-width: 320px;
+    margin: 0;
+    background: #020617;
+    text-rendering: optimizeLegibility;
+}
+
+:root {
+    color-scheme: dark;
+}
+
+::selection {
+    color: #fff;
+    background: rgba(244, 63, 94, 0.65);
 }
 
 html::-webkit-scrollbar,
@@ -269,6 +282,45 @@ html {
     box-shadow: 0 6px 20px rgba(244, 63, 94, 0.4);
 }
 
+.project-link {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+}
+
+.project-link:focus-visible {
+    outline: 2px solid #fda4af;
+    outline-offset: 2px;
+}
+
+.project-link-primary {
+    color: #fff;
+    background: #f43f5e;
+}
+
+.project-link-primary:hover {
+    background: #e11d48;
+}
+
+.project-link-secondary {
+    color: #e2e8f0;
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(15, 23, 42, 0.6);
+}
+
+.project-link-secondary:hover {
+    color: #fda4af;
+    border-color: rgba(244, 63, 94, 0.4);
+}
+
 @keyframes borderAnimation {
     0% { border-color: transparent; }
     100% { border-color: #2a32a5; }
@@ -318,4 +370,19 @@ html {
     background: radial-gradient(circle, rgba(99, 102, 241, 0.06) 0%, transparent 70%);
     border-radius: 9999px;
     pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
 }

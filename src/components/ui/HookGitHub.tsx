@@ -58,7 +58,7 @@ export const useGitHubContributions = (username: string, token: string) => {
 
                 const result = await response.json();
                 setData(result.data.user.contributionsCollection.contributionCalendar);
-            } catch (err) {
+            } catch {
                 setError("An error occurred");
             } finally {
                 setLoading(false);

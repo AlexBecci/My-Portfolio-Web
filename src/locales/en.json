@@ -1,13 +1,18 @@
 {
   "hero": {
     "greeting": "Hello, I'm Alex Becci",
+    "intro": "Hello, I'm",
+    "eyebrow": "Full-stack development",
+    "availability": "Available for new projects",
+    "projectsCta": "View projects",
+    "photoAlt": "Portrait of Alex Becci, software developer",
     "description": "Software Developer with a solid background in building scalable and efficient applications. With a focus on best development practices, I have participated in projects of various sizes, from startups to established companies."
   },
   "buttonCv": "Download CV",
   "buttonLinkedin": "Linkedin",
   "buttonGithub": "Github",
   "SkillSection": {
-    "title": "",
+    "title": "Turning ideas into working products",
     "type": "Services",
     "cards": [
       {
@@ -38,17 +43,49 @@
     ]
   },
   "configuration": {
-    "navTitle": "Lenguage",
+    "navTitle": "Language",
     "optionEnglish": "English",
     "optionSpanish": "Spanish"
   },
   "ConnectWithMe": {
     "title": "Connect with me",
-    "button": "Send"
+    "description": "Have an idea, a project, or an opportunity? Send me a message and let's talk.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "button": "Send message"
   },
   "projects": {
     "title": "Projects",
+    "description": "Real products, from operational tools to platforms and sales experiences.",
+    "countLabel": "selected projects",
+    "githubLabel": "Source",
+    "demoLabel": "Live site",
+    "scrollLeft": "View previous projects",
+    "scrollRight": "View more projects",
     "list": [
+      {
+        "title": "Service Station Shift Management",
+        "description": "A web solution that streamlines daily operations and staff scheduling, providing a clear weekly view of rotating shifts across both the forecourt and the shop.",
+        "imageUrl": "/images/estacion-turnos-preview.svg",
+        "githubUrl": "https://github.com/AlexBecci/SheelTools",
+        "demoUrl": ""
+      },
+      {
+        "title": "Mat Point Tournaments",
+        "description": "A platform for jiu-jitsu academies and instructors that automates internal tournament setup, participant management, statistics, and match distribution.",
+        "imageUrl": "/images/mat-point-preview.svg",
+        "githubUrl": "https://github.com/AlexBecci/Mat-Point-Torneos-de-BJJ",
+        "demoUrl": "https://mat-point-torneos-de-bjj.vercel.app/"
+      },
+      {
+        "title": "Pizzeria Baby Landing Page",
+        "description": "A website for a ready-to-bake pizza business, featuring a clear product catalog, essential information, and a direct WhatsApp ordering channel.",
+        "imageUrl": "/images/pizzeria-baby-preview.jpg",
+        "githubUrl": "https://github.com/AlexBecci/pizzas-baby",
+        "demoUrl": "https://pizzas-baby.vercel.app/"
+      },
       {
         "title": "Urban Voice",
         "description": "Mobile application focused on citizen participation that allows users to report urban issues such as street lighting problems, public space damage, or safety concerns. It includes real-time geolocation, map-based report visualization, community validation system, and status tracking for each report.",
@@ -115,10 +152,27 @@
     ]
   },
   "Skills": {
+    "title": "Technical stack",
+    "description": "The technologies I use to design, build, and ship products.",
     "lenguage": "Programming Languages",
     "libraries": "Technologies & Libraries",
     "Tools": "Development Tools",
     "Databases": "Databases"
+  },
+  "github": {
+    "title": "GitHub activity",
+    "description": "A snapshot of the consistency behind how I build, learn, and improve products.",
+    "profileLabel": "View GitHub profile"
+  },
+  "footer": {
+    "text": "Designed and developed with React and Tailwind"
+  },
+  "accessibility": {
+    "primaryNavigation": "Primary navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "changeLanguage": "Change language",
+    "scrollTop": "Back to top"
   },
   "navbar": {
     "home": "Home",

@@ -1,13 +1,18 @@
 {
     "hero": {
         "greeting": "¡Hola! Soy Alex Becci",
+        "intro": "Hola, soy",
+        "eyebrow": "Desarrollo full-stack",
+        "availability": "Disponible para nuevos proyectos",
+        "projectsCta": "Ver proyectos",
+        "photoAlt": "Retrato de Alex Becci, desarrollador de software",
         "description": "Desarrollador de Software con sólida experiencia en la creación de aplicaciones escalables y eficientes. Con un enfoque en las mejores prácticas de desarrollo, he participado en proyectos de diversas envergaduras, desde startups hasta empresas consolidadas."
     },
     "buttonCv": "Descargar CV",
     "buttonLinkedin": "Linkedin",
     "buttonGithub": "Github",
     "SkillSection": {
-        "title": "",
+        "title": "Soluciones que convierten ideas en producto",
         "type": "Servicios",
         "cards": [
             {
@@ -39,16 +44,48 @@
     },
     "configuration": {
         "navTitle": "Idioma",
-        "optionEnglish": "Ingles",
+        "optionEnglish": "Inglés",
         "optionSpanish": "Español"
     },
     "ConnectWithMe": {
         "title": "Conecta conmigo",
-        "button": "Enviar"
+        "description": "¿Tenés una idea, un proyecto o una oportunidad? Escribime y conversemos.",
+        "emailLabel": "Email",
+        "emailPlaceholder": "tu.email@ejemplo.com",
+        "messageLabel": "Mensaje",
+        "messagePlaceholder": "Contame sobre tu proyecto...",
+        "button": "Enviar mensaje"
     },
     "projects": {
         "title": "Proyectos",
+        "description": "Productos reales, desde herramientas operativas hasta plataformas y experiencias de venta.",
+        "countLabel": "proyectos seleccionados",
+        "githubLabel": "Código",
+        "demoLabel": "Ver sitio",
+        "scrollLeft": "Ver proyectos anteriores",
+        "scrollRight": "Ver más proyectos",
         "list": [
+            {
+                "title": "Gestión de Turnos para Estación de Servicio",
+                "description": "Solución web que simplifica la organización operativa y los horarios del personal, con una vista semanal clara de los turnos rotativos tanto en playa como en el shop.",
+                "imageUrl": "/images/estacion-turnos-preview.svg",
+                "githubUrl": "https://github.com/AlexBecci/SheelTools",
+                "demoUrl": ""
+            },
+            {
+                "title": "Mat Point Tournaments",
+                "description": "Plataforma para academias y profesores de jiu-jitsu que automatiza la creación y gestión de torneos internos, participantes, estadísticas y distribución de combates.",
+                "imageUrl": "/images/mat-point-preview.svg",
+                "githubUrl": "https://github.com/AlexBecci/Mat-Point-Torneos-de-BJJ",
+                "demoUrl": "https://mat-point-torneos-de-bjj.vercel.app/"
+            },
+            {
+                "title": "Landing Page para Pizzería Baby",
+                "description": "Sitio web para un emprendimiento de pizzas listas para hornear en casa, con catálogo de productos, información clara y un canal de venta directa a través de WhatsApp.",
+                "imageUrl": "/images/pizzeria-baby-preview.jpg",
+                "githubUrl": "https://github.com/AlexBecci/pizzas-baby",
+                "demoUrl": "https://pizzas-baby.vercel.app/"
+            },
             {
                 "title": "Voz Urbana",
                 "description": "Aplicación móvil orientada a la participación ciudadana que permite reportar incidencias urbanas como problemas de alumbrado, espacios públicos o seguridad. Incluye geolocalización en tiempo real, visualización de reportes en mapa, sistema de validación comunitaria y seguimiento del estado de cada incidencia.",
@@ -115,10 +152,27 @@
         ]
     },
     "Skills": {
+        "title": "Stack técnico",
+        "description": "Tecnologías que uso para diseñar, construir y poner productos en producción.",
         "lenguage": "Lenguajes de Programación",
         "libraries": "Tecnologías y Librerías",
         "Tools": "Herramientas de Desarrollo",
         "Databases": "Bases de Datos"
+    },
+    "github": {
+        "title": "Actividad en GitHub",
+        "description": "Una vista de mi constancia construyendo, aprendiendo y mejorando productos.",
+        "profileLabel": "Ver perfil en GitHub"
+    },
+    "footer": {
+        "text": "Diseñado y desarrollado con React y Tailwind"
+    },
+    "accessibility": {
+        "primaryNavigation": "Navegación principal",
+        "openMenu": "Abrir menú",
+        "closeMenu": "Cerrar menú",
+        "changeLanguage": "Cambiar idioma",
+        "scrollTop": "Volver al inicio"
     },
     "navbar": {
         "home": "Inicio",

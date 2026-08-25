@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title description">
+  <title id="title">Vista semanal de Estación Turnos</title>
+  <desc id="description">Panel de gestión de turnos rotativos para playa y shop de una estación de servicio.</desc>
+  <defs>
+    <linearGradient id="header" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#164a6a"/>
+      <stop offset="1" stop-color="#25698e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#164a6a" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f4f7f9"/>
+  <rect width="1600" height="108" fill="url(#header)"/>
+  <g font-family="DM Sans, Segoe UI, sans-serif" fill="#fff">
+    <rect x="24" y="25" width="42" height="42" rx="11" fill="#fff" fill-opacity=".13"/>
+    <path d="M34 49h22M39 42h12M39 56h12" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    <text x="82" y="48" font-size="24" font-weight="700">Estación Ramos</text>
+    <text x="82" y="75" font-size="15" fill="#d9edf6">Turnos del personal · Semana actual</text>
+    <rect x="1392" y="30" width="168" height="48" rx="24" fill="#fff" fill-opacity=".12"/>
+    <text x="1424" y="61" font-size="16" font-weight="600">Encargado</text>
+  </g>
+
+  <g font-family="DM Sans, Segoe UI, sans-serif">
+    <rect x="24" y="128" width="1552" height="64" rx="16" fill="#fff" filter="url(#shadow)"/>
+    <rect x="38" y="140" width="744" height="40" rx="12" fill="#eaf3f8"/>
+    <rect x="42" y="144" width="366" height="32" rx="9" fill="#1d5c7e"/>
+    <text x="211" y="166" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">Playa</text>
+    <text x="595" y="166" text-anchor="middle" font-size="16" font-weight="600" fill="#537185">Shop</text>
+    <text x="1230" y="166" text-anchor="end" font-size="15" font-weight="600" fill="#284b60">1 — 7 JUN</text>
+    <rect x="1260" y="140" width="138" height="40" rx="11" fill="#f4f7f9" stroke="#d8e4ea"/>
+    <text x="1329" y="166" text-anchor="middle" font-size="14" font-weight="600" fill="#34566a">Hoy</text>
+    <rect x="1412" y="140" width="146" height="40" rx="11" fill="#e8f7ef"/>
+    <text x="1485" y="166" text-anchor="middle" font-size="14" font-weight="700" fill="#16835a">Publicar</text>
+  </g>
+
+  <g transform="translate(24 214)" font-family="DM Sans, Segoe UI, sans-serif">
+    <rect width="1552" height="454" rx="18" fill="#fff" stroke="#dce5ea"/>
+    <g fill="#f9fbfc">
+      <rect x="18" y="18" width="206" height="52" rx="10"/>
+      <rect x="236" y="18" width="206" height="52" rx="10"/>
+      <rect x="454" y="18" width="206" height="52" rx="10"/>
+      <rect x="672" y="18" width="206" height="52" rx="10"/>
+      <rect x="890" y="18" width="206" height="52" rx="10"/>
+      <rect x="1108" y="18" width="206" height="52" rx="10"/>
+      <rect x="1326" y="18" width="208" height="52" rx="10"/>
+    </g>
+    <g text-anchor="middle" fill="#69808d">
+      <text x="121" y="40" font-size="12" font-weight="700">LUN</text><text x="121" y="60" font-size="19" font-weight="700" fill="#294a5d">1</text>
+      <text x="339" y="40" font-size="12" font-weight="700">MAR</text><text x="339" y="60" font-size="19" font-weight="700" fill="#294a5d">2</text>
+      <text x="557" y="40" font-size="12" font-weight="700">MIÉ</text><text x="557" y="60" font-size="19" font-weight="700" fill="#294a5d">3</text>
+      <text x="775" y="40" font-size="12" font-weight="700">JUE</text><text x="775" y="60" font-size="19" font-weight="700" fill="#294a5d">4</text>
+      <text x="993" y="40" font-size="12" font-weight="700">VIE</text><text x="993" y="60" font-size="19" font-weight="700" fill="#294a5d">5</text>
+      <text x="1211" y="40" font-size="12" font-weight="700">SÁB</text><text x="1211" y="60" font-size="19" font-weight="700" fill="#294a5d">6</text>
+      <text x="1430" y="40" font-size="12" font-weight="700">DOM</text><text x="1430" y="60" font-size="19" font-weight="700" fill="#294a5d">7</text>
+    </g>
+
+    <g stroke="#e7edf1">
+      <path d="M230 82v350M448 82v350M666 82v350M884 82v350M1102 82v350M1320 82v350"/>
+      <path d="M18 200h1516M18 318h1516"/>
+    </g>
+
+    <g font-size="13">
+      <g transform="translate(34 92)"><rect width="174" height="88" rx="10" fill="#fff8ea" stroke="#efb339"/><rect width="5" height="88" rx="3" fill="#e8a322"/><text x="18" y="27" font-weight="700" fill="#284b60">Mariano</text><text x="18" y="51" fill="#6e7f88">06:00 — 14:00</text><text x="18" y="71" fill="#b06e00">Playero</text></g>
+      <g transform="translate(252 92)"><rect width="174" height="88" rx="10" fill="#fff8ea" stroke="#efb339"/><rect width="5" height="88" rx="3" fill="#e8a322"/><text x="18" y="27" font-weight="700" fill="#284b60">Damián</text><text x="18" y="51" fill="#6e7f88">06:00 — 14:00</text><text x="18" y="71" fill="#b06e00">Playero</text></g>
+      <g transform="translate(470 92)"><rect width="174" height="88" rx="10" fill="#fff8ea" stroke="#efb339"/><rect width="5" height="88" rx="3" fill="#e8a322"/><text x="18" y="27" font-weight="700" fill="#284b60">Lucas</text><text x="18" y="51" fill="#6e7f88">06:00 — 14:00</text><text x="18" y="71" fill="#b06e00">Playero</text></g>
+      <g transform="translate(688 92)"><rect width="174" height="88" rx="10" fill="#fff8ea" stroke="#efb339"/><rect width="5" height="88" rx="3" fill="#e8a322"/><text x="18" y="27" font-weight="700" fill="#284b60">Nicolás</text><text x="18" y="51" fill="#6e7f88">06:00 — 14:00</text><text x="18" y="71" fill="#b06e00">Playero</text></g>
+      <g transform="translate(906 92)"><rect width="174" height="88" rx="10" fill="#fff8ea" stroke="#efb339"/><rect width="5" height="88" rx="3" fill="#e8a322"/><text x="18" y="27" font-weight="700" fill="#284b60">Mariano</text><text x="18" y="51" fill="#6e7f88">06:00 — 14:00</text><text x="18" y="71" fill="#b06e00">Playero</text></g>
+      <g transform="translate(1124 92)"><rect width="174" height="88" rx="10" fill="#fff8ea" stroke="#efb339"/><rect width="5" height="88" rx="3" fill="#e8a322"/><text x="18" y="27" font-weight="700" fill="#284b60">Damián</text><text x="18" y="51" fill="#6e7f88">06:00 — 14:00</text><text x="18" y="71" fill="#b06e00">Playero</text></g>
+      <g transform="translate(1342 92)"><rect width="174" height="88" rx="10" fill="#fff8ea" stroke="#efb339"/><rect width="5" height="88" rx="3" fill="#e8a322"/><text x="18" y="27" font-weight="700" fill="#284b60">Lucas</text><text x="18" y="51" fill="#6e7f88">06:00 — 14:00</text><text x="18" y="71" fill="#b06e00">Playero</text></g>
+
+      <g transform="translate(34 210)"><rect width="174" height="88" rx="10" fill="#eef7fd" stroke="#72bce4"/><rect width="5" height="88" rx="3" fill="#3197ce"/><text x="18" y="27" font-weight="700" fill="#284b60">Tomás</text><text x="18" y="51" fill="#6e7f88">14:00 — 22:00</text><text x="18" y="71" fill="#217aaa">Playero</text></g>
+      <g transform="translate(252 210)"><rect width="174" height="88" rx="10" fill="#eef7fd" stroke="#72bce4"/><rect width="5" height="88" rx="3" fill="#3197ce"/><text x="18" y="27" font-weight="700" fill="#284b60">Sebastián</text><text x="18" y="51" fill="#6e7f88">14:00 — 22:00</text><text x="18" y="71" fill="#217aaa">Playero</text></g>
+      <g transform="translate(470 210)"><rect width="174" height="88" rx="10" fill="#eef7fd" stroke="#72bce4"/><rect width="5" height="88" rx="3" fill="#3197ce"/><text x="18" y="27" font-weight="700" fill="#284b60">Tomás</text><text x="18" y="51" fill="#6e7f88">14:00 — 22:00</text><text x="18" y="71" fill="#217aaa">Playero</text></g>
+      <g transform="translate(688 210)"><rect width="174" height="88" rx="10" fill="#eef7fd" stroke="#72bce4"/><rect width="5" height="88" rx="3" fill="#3197ce"/><text x="18" y="27" font-weight="700" fill="#284b60">Sebastián</text><text x="18" y="51" fill="#6e7f88">14:00 — 22:00</text><text x="18" y="71" fill="#217aaa">Playero</text></g>
+      <g transform="translate(906 210)"><rect width="174" height="88" rx="10" fill="#eef7fd" stroke="#72bce4"/><rect width="5" height="88" rx="3" fill="#3197ce"/><text x="18" y="27" font-weight="700" fill="#284b60">Tomás</text><text x="18" y="51" fill="#6e7f88">14:00 — 22:00</text><text x="18" y="71" fill="#217aaa">Playero</text></g>
+      <g transform="translate(1124 210)"><rect width="174" height="88" rx="10" fill="#eef7fd" stroke="#72bce4"/><rect width="5" height="88" rx="3" fill="#3197ce"/><text x="18" y="27" font-weight="700" fill="#284b60">Sebastián</text><text x="18" y="51" fill="#6e7f88">14:00 — 22:00</text><text x="18" y="71" fill="#217aaa">Playero</text></g>
+      <g transform="translate(1342 210)"><rect width="174" height="88" rx="10" fill="#eef7fd" stroke="#72bce4"/><rect width="5" height="88" rx="3" fill="#3197ce"/><text x="18" y="27" font-weight="700" fill="#284b60">Tomás</text><text x="18" y="51" fill="#6e7f88">14:00 — 22:00</text><text x="18" y="71" fill="#217aaa">Playero</text></g>
+
+      <g transform="translate(34 328)"><rect width="174" height="88" rx="10" fill="#fff0f1" stroke="#e9959d"/><rect width="5" height="88" rx="3" fill="#d66370"/><text x="18" y="27" font-weight="700" fill="#284b60">Franco</text><text x="18" y="51" fill="#6e7f88">22:00 — 06:00</text><text x="18" y="71" fill="#b44250">Playero</text></g>
+      <g transform="translate(252 328)"><rect width="174" height="88" rx="10" fill="#edf9f2" stroke="#7bc8a2"/><rect width="5" height="88" rx="3" fill="#35a878"/><text x="18" y="27" font-weight="700" fill="#284b60">Martín</text><text x="18" y="51" fill="#6e7f88">22:00 — 06:00</text><text x="18" y="71" fill="#23825b">Franquero</text></g>
+      <g transform="translate(470 328)"><rect width="174" height="88" rx="10" fill="#fff0f1" stroke="#e9959d"/><rect width="5" height="88" rx="3" fill="#d66370"/><text x="18" y="27" font-weight="700" fill="#284b60">Franco</text><text x="18" y="51" fill="#6e7f88">22:00 — 06:00</text><text x="18" y="71" fill="#b44250">Playero</text></g>
+      <g transform="translate(688 328)"><rect width="174" height="88" rx="10" fill="#edf9f2" stroke="#7bc8a2"/><rect width="5" height="88" rx="3" fill="#35a878"/><text x="18" y="27" font-weight="700" fill="#284b60">Martín</text><text x="18" y="51" fill="#6e7f88">22:00 — 06:00</text><text x="18" y="71" fill="#23825b">Franquero</text></g>
+      <g transform="translate(906 328)"><rect width="174" height="88" rx="10" fill="#fff0f1" stroke="#e9959d"/><rect width="5" height="88" rx="3" fill="#d66370"/><text x="18" y="27" font-weight="700" fill="#284b60">Franco</text><text x="18" y="51" fill="#6e7f88">22:00 — 06:00</text><text x="18" y="71" fill="#b44250">Playero</text></g>
+      <g transform="translate(1124 328)"><rect width="174" height="88" rx="10" fill="#edf9f2" stroke="#7bc8a2"/><rect width="5" height="88" rx="3" fill="#35a878"/><text x="18" y="27" font-weight="700" fill="#284b60">Martín</text><text x="18" y="51" fill="#6e7f88">22:00 — 06:00</text><text x="18" y="71" fill="#23825b">Franquero</text></g>
+      <g transform="translate(1342 328)"><rect width="174" height="88" rx="10" fill="#fff0f1" stroke="#e9959d"/><rect width="5" height="88" rx="3" fill="#d66370"/><text x="18" y="27" font-weight="700" fill="#284b60">Franco</text><text x="18" y="51" fill="#6e7f88">22:00 — 06:00</text><text x="18" y="71" fill="#b44250">Playero</text></g>
+    </g>
+  </g>
+
+  <g transform="translate(24 690)" font-family="DM Sans, Segoe UI, sans-serif">
+    <rect width="1552" height="84" rx="16" fill="#fff" stroke="#dce5ea"/>
+    <text x="24" y="28" font-size="13" font-weight="700" fill="#476476">COBERTURA SEMANAL</text>
+    <rect x="24" y="43" width="1438" height="11" rx="6" fill="#e8eef1"/>
+    <rect x="24" y="43" width="1308" height="11" rx="6" fill="#e5a326"/>
+    <text x="1504" y="55" text-anchor="end" font-size="15" font-weight="700" fill="#294a5d">91%</text>
+  </g>
+
+  <g transform="translate(24 794)" font-family="DM Sans, Segoe UI, sans-serif">
+    <rect width="762" height="82" rx="16" fill="#fff" stroke="#dce5ea"/>
+    <text x="24" y="32" font-size="15" fill="#7b8e98">Horas sin cubrir</text><text x="24" y="62" font-size="27" font-weight="700" fill="#e19a19">0 h</text>
+    <rect x="790" width="786" height="82" rx="16" fill="#fff" stroke="#dce5ea"/>
+    <text x="814" y="32" font-size="15" fill="#7b8e98">Cambios pendientes</text><text x="814" y="62" font-size="27" font-weight="700" fill="#2a85b8">2</text>
+  </g>
+</svg>

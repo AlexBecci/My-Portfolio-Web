@@ -38,17 +38,18 @@ export function SkillCard() {
     };
 
     return (
-        <section id="skills" className="py-20 mx-4 md:mx-12">
+        <section id="skills" className="mx-4 scroll-mt-20 py-20 md:mx-12">
             <div className="max-w-7xl mx-auto">
-                <motion.h2
-                    className="text-4xl font-bold text-rose-500 mb-16"
+                <motion.div
+                    className="mb-16"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    Skills
-                </motion.h2>
+                    <h2 className="text-4xl font-bold text-white sm:text-5xl">{t('Skills.title')}</h2>
+                    <p className="mt-4 max-w-2xl leading-relaxed text-slate-400">{t('Skills.description')}</p>
+                </motion.div>
 
                 <Carousel title={t('Skills.lenguage')} items={skills.languages} />
                 <Carousel title={t('Skills.libraries')} items={skills.technologies} />
@@ -94,7 +95,11 @@ const Carousel: React.FC<CarouselProps> = ({ title, items }) => {
                         <div className="flex flex-col items-center space-y-4">
                             <img
                                 src={item.icon}
-                                alt={item.name}
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                width="48"
+                                height="48"
                                 className="w-12 h-12 rounded-full object-contain group-hover:scale-110 transition-transform duration-300"
                             />
                             <span className="text-gray-300 text-sm font-medium group-hover:text-white transition-colors duration-300">{item.name}</span>
