@@ -68,7 +68,7 @@
       {
         "title": "Service Station Shift Management",
         "description": "A web solution that streamlines daily operations and staff scheduling, providing a clear weekly view of rotating shifts across both the forecourt and the shop.",
-        "imageUrl": "/images/estacion-turnos-preview.svg",
+        "imageUrl": "/images/estacion-turnos-preview.png",
         "githubUrl": "https://github.com/AlexBecci/SheelTools",
         "demoUrl": "https://sheltools.up.railway.app/"
       },

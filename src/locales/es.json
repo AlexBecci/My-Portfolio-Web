@@ -68,7 +68,7 @@
             {
                 "title": "Gestión de Turnos para Estación de Servicio",
                 "description": "Solución web que simplifica la organización operativa y los horarios del personal, con una vista semanal clara de los turnos rotativos tanto en playa como en el shop.",
-                "imageUrl": "/images/estacion-turnos-preview.svg",
+                "imageUrl": "/images/estacion-turnos-preview.png",
                 "githubUrl": "https://github.com/AlexBecci/SheelTools",
                 "demoUrl": "https://sheltools.up.railway.app/"
             },
