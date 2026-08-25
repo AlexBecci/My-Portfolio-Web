@@ -70,7 +70,7 @@
                 "description": "Solución web que simplifica la organización operativa y los horarios del personal, con una vista semanal clara de los turnos rotativos tanto en playa como en el shop.",
                 "imageUrl": "/images/estacion-turnos-preview.svg",
                 "githubUrl": "https://github.com/AlexBecci/SheelTools",
-                "demoUrl": ""
+                "demoUrl": "https://sheltools.up.railway.app/"
             },
             {
                 "title": "Mat Point Tournaments",
